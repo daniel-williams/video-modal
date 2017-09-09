@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   <site-styles></site-styles>
   <site-nav></site-nav>
   <router-outlet></router-outlet>
-  <div><video-modal></video-modal></div>
   `,
   styleUrls: ['./app.component.scss'],
 })

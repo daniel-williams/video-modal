@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LazyRoutingModule } from './lazy-routing.module';
-import { VideoModalModule } from '../video-modal';
+import { SharedModule } from '../shared';
 
 import { LazyComponent } from './lazy.component';
 
@@ -10,7 +10,7 @@ import { LazyComponent } from './lazy.component';
   imports: [
     CommonModule,
     LazyRoutingModule,
-    VideoModalModule,
+    SharedModule,
   ],
   declarations: [
     LazyComponent,

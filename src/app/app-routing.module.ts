@@ -14,10 +14,6 @@ const routes: Routes = [
     loadChildren: './lazy/lazy.module#LazyModule',
   },
   {
-    path: 'video-modal',
-    loadChildren: './video-modal/video-modal.module#VideoModalModule',
-  },
-  {
     path: '**',
     redirectTo: ''
   }

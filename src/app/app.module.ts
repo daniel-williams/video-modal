@@ -4,7 +4,8 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule }  from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { VideoModalModule } from './video-modal';
+import { CoreModule } from './core';
+import { SharedModule } from './shared';
 
 import { App } from './app.component';
 import { SiteNav } from './site-nav';
@@ -20,7 +21,7 @@ import { SiteStyles } from './site-styles';
     ReactiveFormsModule,
 
     AppRoutingModule,
-    VideoModalModule,
+    CoreModule,
   ],
   declarations: [
     App,
