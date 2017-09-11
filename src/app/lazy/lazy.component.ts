@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
 
-import { VideoService } from '../shared/video-modal';
+import { StudyService } from '../shared';
 
 
 @Component({
-  template: `
-  <div class='card'>
-    <div>Lazy loaded module</div>
-    <video-modal>{{url}}</video-modal>
-  </div>
-  `,
+  templateUrl: './lazy.component.html',
   styleUrls: ['./lazy.component.scss']
 })
 export class LazyComponent {
-  url: string = 'default';
-  test: string = 'test';
+  users: string[];
 
-  constructor(private videoSerivce: VideoService) {
-    videoSerivce.getNextVideo().subscribe(x => this.url = x);
+  constructor(private ss: StudyService) {
+    ss.userIds.subscribe(x => this.users = x);
   }
 }
