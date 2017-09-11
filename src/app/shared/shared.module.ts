@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { VideoModalModule } from './video-modal';
+import { StudyService } from './study.service';
+
 
 @NgModule({
   imports: [
@@ -13,6 +15,9 @@ import { VideoModalModule } from './video-modal';
     CommonModule,
     VideoModalModule,
     FormsModule,
+  ],
+  providers: [
+    StudyService,
   ]
 })
 export class SharedModule {}

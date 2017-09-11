@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { VideoModalComponent } from './video-modal.component';
-import { VideoService } from './video.service';
 
 
 @NgModule({
   imports: [
+    CommonModule,
   ],
   declarations: [
     VideoModalComponent,
@@ -15,7 +15,6 @@ import { VideoService } from './video.service';
     VideoModalComponent
   ],
   providers: [
-    VideoService
   ]
 })
 export class VideoModalModule {}
